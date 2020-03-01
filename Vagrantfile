@@ -5,6 +5,8 @@ $install_docker = <<-SCRIPT
 curl https://get.docker.com | bash
 sudo usermod -aG docker vagrant
 sudo systemctl start docker
+sudo sysctl net.bridge.bridge-nf-call-iptables=1
+sudo sysctl net.bridge.bridge-nf-call-ip6tables=1
 SCRIPT
 
 Vagrant.configure("2") do |config|
