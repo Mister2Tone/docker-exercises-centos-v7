@@ -16,3 +16,6 @@
   - IP 192.168.56.99
   - CPU 2 cores
   - RAM 4096 MBs
+
+## Reference
+1. [Docker Cookbook - 2nd Edition](https://subscription.packtpub.com/book/virtualization_and_cloud/9781788626866)
