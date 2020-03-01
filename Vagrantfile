@@ -7,7 +7,7 @@ sudo usermod -aG docker vagrant
 sudo systemctl start docker
 sudo sysctl net.bridge.bridge-nf-call-iptables=1
 sudo sysctl net.bridge.bridge-nf-call-ip6tables=1
-sudo yum install epel-release jq -y
+sudo yum install epel-release jq psmisc -y
 SCRIPT
 
 Vagrant.configure("2") do |config|
